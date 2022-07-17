@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Bai_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int ngay, thang, nam;
+		
+		System.out.print("Nhap Ngay sinh: ");
+		ngay = sc.nextInt();
+		System.out.print("Nhap Thang sinh: ");
+		thang = sc.nextInt();
+		System.out.print("Nhap Nam sinh: ");
+		nam = sc.nextInt();
+		
+		if(ngay >= 21 && thang == 3 || ngay <= 20 && thang == 4) {
+			System.out.println("Ban thuoc cung bach duong!");
+		} 
+		else if (ngay >= 21 && thang == 4 || ngay <= 20 && thang == 5) {
+			System.out.println("Ban thuoc cung kim nguu!");
+		} 
+		else if (ngay >= 21 && thang == 5 || ngay <= 21 && thang == 6) {
+			System.out.println("Ban thuoc cung song tu!");
+		} 
+		else if (ngay >= 22 && thang == 6 || ngay <= 22 && thang == 7) {
+			System.out.println("Ban thuoc cung cu giai!");
+		} 
+		else if (ngay >= 23 && thang == 7 || ngay <= 22 && thang == 8) {
+			System.out.println("Ban thuoc cung su tu!");
+		} 
+		else if (ngay >= 23 && thang == 8 || ngay <= 22 && thang == 9) {
+			System.out.println("Ban thuoc cung xu nu!");
+		} 
+		else if (ngay >= 23 && thang == 9 || ngay <= 23 && thang == 10) {
+			System.out.println("Ban thuoc cung thien binh!");
+		} 
+		else if (ngay >= 24 && thang == 10 || ngay <= 22 && thang == 11) {
+			System.out.println("Ban thuoc cung thien yet!");
+		} 
+		else if (ngay >= 23 && thang == 11 || ngay <= 21 && thang == 12) {
+			System.out.println("Ban thuoc cung nhan ma!");
+		} 
+		else if (ngay >= 22 && thang == 12 || ngay <= 19 && thang == 1) {
+			System.out.println("Ban thuoc cung ma ket!");
+		} 
+		else if (ngay >= 20 && thang == 1  || ngay <= 18 && thang == 2) {
+			System.out.println("Ban thuoc cung bao binh!");
+		} 
+		else {
+			System.out.println("Ban thuoc cung song ngu!");
+		}
+	}
+
+}
